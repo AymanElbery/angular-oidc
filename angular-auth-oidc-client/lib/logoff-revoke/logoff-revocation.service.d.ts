@@ -1,0 +1,32 @@
+import { Observable } from 'rxjs';
+import { DataService } from '../api/data.service';
+import { LogoutAuthOptions } from '../auth-options';
+import { OpenIdConfiguration } from '../config/openid-configuration';
+import { ResetAuthDataService } from '../flows/reset-auth-data.service';
+import { CheckSessionService } from '../iframe/check-session.service';
+import { LoggerService } from '../logging/logger.service';
+import { StoragePersistenceService } from '../storage/storage-persistence.service';
+import { RedirectService } from '../utils/redirect/redirect.service';
+import { UrlService } from '../utils/url/url.service';
+import * as i0 from "@angular/core";
+export declare class LogoffRevocationService {
+    private readonly dataService;
+    private readonly storagePersistenceService;
+    private readonly loggerService;
+    private readonly urlService;
+    private readonly checkSessionService;
+    private readonly resetAuthDataService;
+    private readonly redirectService;
+    constructor(dataService: DataService, storagePersistenceService: StoragePersistenceService, loggerService: LoggerService, urlService: UrlService, checkSessionService: CheckSessionService, resetAuthDataService: ResetAuthDataService, redirectService: RedirectService);
+    logoff(config: OpenIdConfiguration, allConfigs: OpenIdConfiguration[], logoutAuthOptions?: LogoutAuthOptions): Observable<unknown>;
+    logoffLocal(config: OpenIdConfiguration, allConfigs: OpenIdConfiguration[]): void;
+    logoffLocalMultiple(allConfigs: OpenIdConfiguration[]): void;
+    logoffAndRevokeTokens(config: OpenIdConfiguration, allConfigs: OpenIdConfiguration[], logoutAuthOptions?: LogoutAuthOptions): Observable<any>;
+    revokeAccessToken(configuration: OpenIdConfiguration, accessToken?: any): Observable<any>;
+    revokeRefreshToken(configuration: OpenIdConfiguration, refreshToken?: any): Observable<any>;
+    private logoffInternal;
+    private sendRevokeRequest;
+    private getHeaders;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LogoffRevocationService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<LogoffRevocationService>;
+}

@@ -1,0 +1,41 @@
+import { Observable } from 'rxjs';
+import { LoggerService } from '../logging/logger.service';
+import { PublicEventsService } from '../public-events/public-events.service';
+import { StoragePersistenceService } from '../storage/storage-persistence.service';
+import { PlatformProvider } from '../utils/platform-provider/platform.provider';
+import { AuthWellKnownService } from './auth-well-known/auth-well-known.service';
+import { StsConfigLoader } from './loader/config-loader';
+import { OpenIdConfiguration } from './openid-configuration';
+import { ConfigValidationService } from './validation/config-validation.service';
+import * as i0 from "@angular/core";
+export declare class ConfigurationService {
+    private readonly loggerService;
+    private readonly publicEventsService;
+    private readonly storagePersistenceService;
+    private readonly configValidationService;
+    private readonly platformProvider;
+    private readonly authWellKnownService;
+    private readonly loader;
+    private configsInternal;
+    constructor(loggerService: LoggerService, publicEventsService: PublicEventsService, storagePersistenceService: StoragePersistenceService, configValidationService: ConfigValidationService, platformProvider: PlatformProvider, authWellKnownService: AuthWellKnownService, loader: StsConfigLoader);
+    hasManyConfigs(): boolean;
+    getAllConfigurations(): OpenIdConfiguration[];
+    getOpenIDConfiguration(configId?: string): Observable<OpenIdConfiguration>;
+    getOpenIDConfigurations(configId?: string): Observable<{
+        allConfigs: any;
+        currentConfig: any;
+    }>;
+    hasAtLeastOneConfig(): boolean;
+    private saveConfig;
+    private loadConfigs;
+    private configsAlreadySaved;
+    private getConfig;
+    private prepareAndSaveConfigs;
+    private createUniqueIds;
+    private handleConfig;
+    private enhanceConfigWithWellKnownEndpoint;
+    private prepareConfig;
+    private setSpecialCases;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ConfigurationService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<ConfigurationService>;
+}

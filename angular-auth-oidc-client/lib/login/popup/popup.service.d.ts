@@ -1,0 +1,30 @@
+import { Observable } from 'rxjs';
+import { OpenIdConfiguration } from '../../config/openid-configuration';
+import { LoggerService } from '../../logging/logger.service';
+import { StoragePersistenceService } from '../../storage/storage-persistence.service';
+import { PopupOptions } from './popup-options';
+import { PopupResult } from './popup-result';
+import * as i0 from "@angular/core";
+export declare class PopUpService {
+    private readonly document;
+    private readonly loggerService;
+    private readonly storagePersistenceService;
+    private readonly STORAGE_IDENTIFIER;
+    private popUp;
+    private handle;
+    private readonly resultInternal$;
+    get result$(): Observable<PopupResult>;
+    private get windowInternal();
+    constructor(document: Document, loggerService: LoggerService, storagePersistenceService: StoragePersistenceService);
+    currentWindowIsPopUp(): boolean;
+    isCurrentlyInPopup(config: OpenIdConfiguration): boolean;
+    openPopUp(url: string, popupOptions: PopupOptions, config: OpenIdConfiguration): void;
+    sendMessageToMainWindow(url: string): void;
+    private cleanUp;
+    private sendMessage;
+    private getOptions;
+    private mainWindowHasPopupOpen;
+    private canAccessSessionStorage;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PopUpService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<PopUpService>;
+}

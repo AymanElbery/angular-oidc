@@ -1,0 +1,30 @@
+import { LoggerService } from '../logging/logger.service';
+import { StoragePersistenceService } from '../storage/storage-persistence.service';
+import { OpenIdConfiguration } from './../config/openid-configuration';
+import { RandomService } from './random/random.service';
+import * as i0 from "@angular/core";
+export declare class FlowsDataService {
+    private readonly storagePersistenceService;
+    private readonly randomService;
+    private readonly loggerService;
+    constructor(storagePersistenceService: StoragePersistenceService, randomService: RandomService, loggerService: LoggerService);
+    createNonce(configuration: OpenIdConfiguration): string;
+    setNonce(nonce: string, configuration: OpenIdConfiguration): void;
+    getAuthStateControl(configuration: OpenIdConfiguration): any;
+    setAuthStateControl(authStateControl: string, configuration: OpenIdConfiguration): boolean;
+    getExistingOrCreateAuthStateControl(configuration: OpenIdConfiguration): any;
+    setSessionState(sessionState: any, configuration: OpenIdConfiguration): void;
+    resetStorageFlowData(configuration: OpenIdConfiguration): void;
+    getCodeVerifier(configuration: OpenIdConfiguration): any;
+    createCodeVerifier(configuration: OpenIdConfiguration): string;
+    isCodeFlowInProgress(configuration: OpenIdConfiguration): boolean;
+    setCodeFlowInProgress(configuration: OpenIdConfiguration): void;
+    resetCodeFlowInProgress(configuration: OpenIdConfiguration): void;
+    private getCodeFlowInProgressStorageEntry;
+    isSilentRenewRunning(configuration: OpenIdConfiguration): boolean;
+    setSilentRenewRunning(configuration: OpenIdConfiguration): void;
+    resetSilentRenewRunning(configuration: OpenIdConfiguration): void;
+    private getSilentRenewRunningStorageEntry;
+    static ɵfac: i0.ɵɵFactoryDeclaration<FlowsDataService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<FlowsDataService>;
+}

@@ -1,0 +1,25 @@
+{
+    "general": {
+        "app_title": "إدارة المشتريات"
+    },
+    "menu":{
+        "dashboard": "الصفحة الرئيسية",
+        "users_management": "إدارة المستخدمين",
+        "requests_management": "إدارة الطلبات",
+        "users": {
+            "admins": "مديري النظام"
+        },
+        "requests": {
+            "pending_requests": "الطلبات تحت الإجراء",
+            "rejected_requests": "الطلبات المرفوضة",
+            "accepted_requests": "الطلبات المقبولة"
+        }
+    },
+    "header": {
+        "notification": "الإشعارات",
+        "account": {
+            "profile": "الصفحة الشخصية",
+            "logout": "تسجيل الخروج"
+        }
+    }
+}

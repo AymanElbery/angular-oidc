@@ -1,0 +1,23 @@
+<!-- <app-breadcrumb [title]="title" [items]="['Sample page']" [active_item]="'Sample Page 1'"></app-breadcrumb> -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card o-hidden">
+        <div class="card-body">
+          <div class="media static-widget">
+            <div class="media-body">
+              <h6 class="font-roboto">{{data.title}}</h6>
+              <h4 class="mb-0 counter" [CountTo]="10" [from]="0" [duration]="1"></h4>
+            </div>
+            <svg-icon src="assets/svgIcon/{{data.icon}}.svg"></svg-icon>
+          </div>
+          <div class="progress-widget">
+            <div class="progress sm-progress-bar progress-animate">
+              <div class="progress-gradient-{{data.color}}" role="progressbar" [ngStyle]="{'width': data.laval}" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="animate-circle"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

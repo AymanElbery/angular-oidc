@@ -1,0 +1,20 @@
+export var ValidationResult;
+(function (ValidationResult) {
+    ValidationResult["NotSet"] = "NotSet";
+    ValidationResult["StatesDoNotMatch"] = "StatesDoNotMatch";
+    ValidationResult["SignatureFailed"] = "SignatureFailed";
+    ValidationResult["IncorrectNonce"] = "IncorrectNonce";
+    ValidationResult["RequiredPropertyMissing"] = "RequiredPropertyMissing";
+    ValidationResult["MaxOffsetExpired"] = "MaxOffsetExpired";
+    ValidationResult["IssDoesNotMatchIssuer"] = "IssDoesNotMatchIssuer";
+    ValidationResult["NoAuthWellKnownEndPoints"] = "NoAuthWellKnownEndPoints";
+    ValidationResult["IncorrectAud"] = "IncorrectAud";
+    ValidationResult["IncorrectIdTokenClaimsAfterRefresh"] = "IncorrectIdTokenClaimsAfterRefresh";
+    ValidationResult["IncorrectAzp"] = "IncorrectAzp";
+    ValidationResult["TokenExpired"] = "TokenExpired";
+    ValidationResult["IncorrectAtHash"] = "IncorrectAtHash";
+    ValidationResult["Ok"] = "Ok";
+    ValidationResult["LoginRequired"] = "LoginRequired";
+    ValidationResult["SecureTokenServerError"] = "SecureTokenServerError";
+})(ValidationResult || (ValidationResult = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmFsaWRhdGlvbi1yZXN1bHQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy9hbmd1bGFyLWF1dGgtb2lkYy1jbGllbnQvc3JjL2xpYi92YWxpZGF0aW9uL3ZhbGlkYXRpb24tcmVzdWx0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQU0sQ0FBTixJQUFZLGdCQWlCWDtBQWpCRCxXQUFZLGdCQUFnQjtJQUMxQixxQ0FBaUIsQ0FBQTtJQUNqQix5REFBcUMsQ0FBQTtJQUNyQyx1REFBbUMsQ0FBQTtJQUNuQyxxREFBaUMsQ0FBQTtJQUNqQyx1RUFBbUQsQ0FBQTtJQUNuRCx5REFBcUMsQ0FBQTtJQUNyQyxtRUFBK0MsQ0FBQTtJQUMvQyx5RUFBcUQsQ0FBQTtJQUNyRCxpREFBNkIsQ0FBQTtJQUM3Qiw2RkFBeUUsQ0FBQTtJQUN6RSxpREFBNkIsQ0FBQTtJQUM3QixpREFBNkIsQ0FBQTtJQUM3Qix1REFBbUMsQ0FBQTtJQUNuQyw2QkFBUyxDQUFBO0lBQ1QsbURBQStCLENBQUE7SUFDL0IscUVBQWlELENBQUE7QUFDbkQsQ0FBQyxFQWpCVyxnQkFBZ0IsS0FBaEIsZ0JBQWdCLFFBaUIzQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBlbnVtIFZhbGlkYXRpb25SZXN1bHQge1xyXG4gIE5vdFNldCA9ICdOb3RTZXQnLFxyXG4gIFN0YXRlc0RvTm90TWF0Y2ggPSAnU3RhdGVzRG9Ob3RNYXRjaCcsXHJcbiAgU2lnbmF0dXJlRmFpbGVkID0gJ1NpZ25hdHVyZUZhaWxlZCcsXHJcbiAgSW5jb3JyZWN0Tm9uY2UgPSAnSW5jb3JyZWN0Tm9uY2UnLFxyXG4gIFJlcXVpcmVkUHJvcGVydHlNaXNzaW5nID0gJ1JlcXVpcmVkUHJvcGVydHlNaXNzaW5nJyxcclxuICBNYXhPZmZzZXRFeHBpcmVkID0gJ01heE9mZnNldEV4cGlyZWQnLFxyXG4gIElzc0RvZXNOb3RNYXRjaElzc3VlciA9ICdJc3NEb2VzTm90TWF0Y2hJc3N1ZXInLFxyXG4gIE5vQXV0aFdlbGxLbm93bkVuZFBvaW50cyA9ICdOb0F1dGhXZWxsS25vd25FbmRQb2ludHMnLFxyXG4gIEluY29ycmVjdEF1ZCA9ICdJbmNvcnJlY3RBdWQnLFxyXG4gIEluY29ycmVjdElkVG9rZW5DbGFpbXNBZnRlclJlZnJlc2ggPSAnSW5jb3JyZWN0SWRUb2tlbkNsYWltc0FmdGVyUmVmcmVzaCcsXHJcbiAgSW5jb3JyZWN0QXpwID0gJ0luY29ycmVjdEF6cCcsXHJcbiAgVG9rZW5FeHBpcmVkID0gJ1Rva2VuRXhwaXJlZCcsXHJcbiAgSW5jb3JyZWN0QXRIYXNoID0gJ0luY29ycmVjdEF0SGFzaCcsXHJcbiAgT2sgPSAnT2snLFxyXG4gIExvZ2luUmVxdWlyZWQgPSAnTG9naW5SZXF1aXJlZCcsXHJcbiAgU2VjdXJlVG9rZW5TZXJ2ZXJFcnJvciA9ICdTZWN1cmVUb2tlblNlcnZlckVycm9yJyxcclxufVxyXG4iXX0=

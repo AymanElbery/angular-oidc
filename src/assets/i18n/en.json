@@ -1,0 +1,25 @@
+{
+    "general": {
+        "app_title": "SEU CPM"
+    },
+    "menu":{
+        "dashboard": "Dashboard",
+        "users_management": "Users Management",
+        "requests_management": "Requests Management",
+        "users": {
+            "admins": "Admins"
+        },
+        "requests": {
+            "pending_requests": "Pending Requests",
+            "rejected_requests": "Rejected Requests",
+            "accepted_requests": "Accepted Requests"
+        }
+    },
+    "header": {
+        "notification": "Notifications",
+        "account": {
+            "profile": "profile",
+            "logout": "logout"
+        }
+    }
+}
